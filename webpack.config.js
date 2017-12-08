@@ -11,6 +11,8 @@ const SubjectDirs = fs.readdirSync(SubjectsDir).filter(function(dir) {
   return isDirectory(path.join(SubjectsDir, dir))
 })
 
+console.log('Server', process.env.PORT)
+
 module.exports = {
   devtool: "source-map",
 
