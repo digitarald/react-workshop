@@ -79,6 +79,7 @@ module.exports = {
   devServer: {
     quiet: false,
     noInfo: false,
+    port: process.env.PORT || 8080,
     historyApiFallback: {
       rewrites: [
         {
