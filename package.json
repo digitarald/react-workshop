@@ -7,8 +7,9 @@
   "license": "GPL-3.0",
   "authors": ["Ryan Florence", "Michael Jackson"],
   "scripts": {
+    "build": "node ./scripts/build.js",
     "start":
-      "node ./scripts/build.js && webpack-dev-server --inline --content-base subjects",
+      "webpack-dev-server --inline --content-base subjects",
     "server-exercise":
       "supervisor -- -r babel-register subjects/ServerRendering/exercise/server.js",
     "server-solution":
